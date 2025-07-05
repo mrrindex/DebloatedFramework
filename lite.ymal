@@ -1,0 +1,140 @@
+$engine: 3
+$onesync: on
+name: QBCore Framework (Minimal)
+version: 2.2.4
+author: ⠝
+
+tasks:
+  # Download & Setup Base Files
+  - action: download_github
+    src: https://github.com/qbcore-framework/txAdminRecipe
+    ref: main
+    dest: ./tmp/qbcore
+
+  - action: move_path
+    src: ./tmp/qbcore/server.cfg
+    dest: ./server.cfg
+
+  - action: move_path
+    src: ./tmp/qbcore/myLogo.png
+    dest: ./myLogo.png
+
+  # Prepare Database
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/qbcore/qbcore.sql
+
+  # Download Core Dependencies
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    subpath: resources
+    dest: ./resources/[cfx-default]
+  - action: remove_path
+    path: ./resources/[cfx-default]/[gameplay]/chat
+
+  - action: download_file
+    url: https://github.com/overextended/oxmysql/releases/download/v2.12.0/oxmysql.zip
+    path: ./tmp/oxmysql.zip
+  - action: unzip
+    src: ./tmp/oxmysql.zip
+    dest: ./resources/[standalone]
+
+  - action: download_file
+    url: https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
+    path: ./tmp/menuv.zip
+  - action: unzip
+    src: ./tmp/menuv.zip
+    dest: ./resources/[standalone]/menuv
+
+  - action: download_github
+    src: https://github.com/AvarianKnight/pma-voice
+    ref: main
+    dest: ./resources/[voice]/pma-voice
+
+  - action: download_github
+    src: https://github.com/citizenfx/screenshot-basic
+    ref: master
+    dest: ./resources/[standalone]/screenshot-basic
+
+  # Download Core QBCore Framework Resources
+  - action: download_github_list
+    org: qbcore-framework
+    repos:
+      # Standalone Dependencies
+      - name: bob74_ipl
+        ref: master
+        path: ./resources/[standalone]/bob74_ipl
+      - name: progressbar
+        path: ./resources/[standalone]/progressbar
+      - name: interact-sound
+        ref: master
+        path: ./resources/[standalone]/interact-sound
+      - name: connectqueue
+        ref: master
+        path: ./resources/[standalone]/connectqueue
+      - name: PolyZone
+        ref: master
+        path: ./resources/[standalone]/PolyZone
+      - name: LegacyFuel
+        ref: master
+        path: ./resources/[standalone]/LegacyFuel
+      # Voice
+      - name: qb-radio
+        path: ./resources/[voice]/in-radio
+      # Core Index
+      - name: qb-core
+        path: ./resources/[index]/in-core
+      - name: qb-adminmenu
+        path: ./resources/[index]/in-adminmenu
+      - name: qb-multicharacter
+        path: ./resources/[index]/in-multicharacter
+      - name: qb-target
+        path: ./resources/[index]/in-target
+      - name: qb-prison
+        path: ./resources/[index]/in-prison
+      - name: qb-hud
+        path: ./resources/[index]/in-hud
+      - name: qb-management
+        path: ./resources/[index]/in-management
+      - name: qb-inventory
+        path: ./resources/[index]/in-inventory
+      - name: qb-houses
+        path: ./resources/[index]/in-houses
+      - name: qb-garages
+        path: ./resources/[index]/in-garages
+      - name: qb-ambulancejob
+        path: ./resources/[index]/in-ambulancejob
+      - name: qb-radialmenu
+        path: ./resources/[index]/in-radialmenu
+      - name: qb-weathersync
+        path: ./resources/[index]/in-weathersync
+      - name: qb-policejob
+        path: ./resources/[index]/in-policejob
+      - name: qb-apartments
+        path: ./resources/[index]/in-apartments
+      - name: qb-vehiclekeys
+        path: ./resources/[index]/in-vehiclekeys
+      - name: qb-phone
+        path: ./resources/[index]/in-phone
+      - name: qb-weapons
+        path: ./resources/[index]/in-weapons
+      - name: qb-spawn
+        path: ./resources/[index]/in-spawn
+      - name: qb-banking
+        path: ./resources/[index]/in-banking
+      - name: qb-clothing
+        path: ./resources/[index]/in-clothing
+      - name: qb-doorlock
+        path: ./resources/[index]/in-doorlock
+      - name: qb-shops
+        path: ./resources/[index]/in-shops
+      - name: qb-interior
+        path: ./resources/[index]/in-interior
+      - name: qb-menu
+        path: ./resources/[index]/in-menu
+      - name: qb-input
+        path: ./resources/[index]/in-input
+
+  # Final Cleanup
+  - action: remove_path
+    path: ./tmp
