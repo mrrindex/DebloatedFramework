@@ -99,7 +99,7 @@ tasks:
   - action: download_github
     dest: ./resources/[vc]/in-radio
     ref: main
-    src: https://github.com/qbcore-framework/in-radio
+    src: https://github.com/qbcore-framework/qb-radio
 
     # MAPS
   - action: download_github
@@ -124,27 +124,27 @@ tasks:
   - action: download_github
     dest: ./resources/[in]/in-core
     ref: main
-    src: https://github.com/qbcore-framework/in-core
+    src: https://github.com/qbcore-framework/qb-core
 
   - action: download_github
     dest: ./resources/[in]/in-adminmenu
     ref: main
-    src: https://github.com/qbcore-framework/in-adminmenu
+    src: https://github.com/qbcore-framework/qb-adminmenu
 
   - action: download_github
     dest: ./resources/[in]/in-multicharacter
     ref: main
-    src: https://github.com/qbcore-framework/in-multicharacter
+    src: https://github.com/qbcore-framework/qb-multicharacter
 
   - action: download_github
     dest: ./resources/[in]/in-target
     ref: main
-    src: https://github.com/qbcore-framework/in-target
+    src: https://github.com/qbcore-framework/qb-target
 
   - action: download_github
     dest: ./resources/[in]/in-vehicleshop
     ref: main
-    src: https://github.com/qbcore-framework/in-vehicleshop
+    src: https://github.com/qbcore-framework/qb-vehicleshop
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -152,37 +152,37 @@ tasks:
   - action: download_github
     dest: ./resources/[in]/in-prison
     ref: main
-    src: https://github.com/qbcore-framework/in-prison
+    src: https://github.com/qbcore-framework/qb-prison
 
   - action: download_github
     dest: ./resources/[in]/in-hud
     ref: main
-    src: https://github.com/qbcore-framework/in-hud
+    src: https://github.com/qbcore-framework/qb-hud
 
   - action: download_github
     dest: ./resources/[in]/in-management
     ref: main
-    src: https://github.com/qbcore-framework/in-management
+    src: https://github.com/qbcore-framework/qb-management
 	
   - action: download_github
     dest: ./resources/[in]/in-inventory
     ref: main
-    src: https://github.com/qbcore-framework/in-inventory
+    src: https://github.com/qbcore-framework/qb-inventory
 
   - action: download_github
     dest: ./resources/[in]/in-houses
     ref: main
-    src: https://github.com/qbcore-framework/in-houses
+    src: https://github.com/qbcore-framework/qb-houses
 
   - action: download_github
     dest: ./resources/[in]/in-garages
     ref: main
-    src: https://github.com/qbcore-framework/in-garages
+    src: https://github.com/qbcore-framework/qb-garages
 
   - action: download_github
     dest: ./resources/[in]/in-ambulancejob
     ref: main
-    src: https://github.com/qbcore-framework/in-ambulancejob
+    src: https://github.com/qbcore-framework/qb-ambulancejob
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -190,32 +190,32 @@ tasks:
   - action: download_github
     dest: ./resources/[in]/in-radialmenu
     ref: main
-    src: https://github.com/qbcore-framework/in-radialmenu
+    src: https://github.com/qbcore-framework/qb-radialmenu
 
   - action: download_github
     dest: ./resources/[in]/in-weathersync
     ref: main
-    src: https://github.com/qbcore-framework/in-weathersync
+    src: https://github.com/qbcore-framework/qb-weathersync
 
   - action: download_github
     dest: ./resources/[in]/in-policejob
     ref: main
-    src: https://github.com/qbcore-framework/in-policejob
+    src: https://github.com/qbcore-framework/qb-policejob
 
   - action: download_github
     dest: ./resources/[in]/in-apartments
     ref: main
-    src: https://github.com/qbcore-framework/in-apartments
+    src: https://github.com/qbcore-framework/qb-apartments
 
   - action: download_github
     dest: ./resources/[in]/in-vehiclekeys
     ref: main
-    src: https://github.com/qbcore-framework/in-vehiclekeys
+    src: https://github.com/qbcore-framework/qb-vehiclekeys
 
   - action: download_github
     dest: ./resources/[in]/in-phone
     ref: main
-    src: https://github.com/qbcore-framework/in-phone
+    src: https://github.com/qbcore-framework/qb-phone
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -223,12 +223,12 @@ tasks:
   - action: download_github
     dest: ./resources/[in]/in-weapons
     ref: main
-    src: https://github.com/qbcore-framework/in-weapons
+    src: https://github.com/qbcore-framework/qb-weapons
 
   - action: download_github
     dest: ./resources/[in]/in-spawn
     ref: main
-    src: https://github.com/qbcore-framework/in-spawn
+    src: https://github.com/qbcore-framework/qb-spawn
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -236,32 +236,32 @@ tasks:
   - action: download_github
     dest: ./resources/[in]/in-banking
     ref: main
-    src: https://github.com/qbcore-framework/in-banking
+    src: https://github.com/qbcore-framework/qb-banking
 
   - action: download_github
     dest: ./resources/[in]/in-clothing
     ref: main
-    src: https://github.com/qbcore-framework/in-clothing
+    src: https://github.com/qbcore-framework/qb-clothing
 
   - action: download_github
     dest: ./resources/[in]/in-doorlock
     ref: main
-    src: https://github.com/qbcore-framework/in-doorlock
+    src: https://github.com/qbcore-framework/qb-doorlock
 
   - action: download_github
     dest: ./resources/[in]/in-shops
     ref: main
-    src: https://github.com/qbcore-framework/in-shops
+    src: https://github.com/qbcore-framework/qb-shops
 
   - action: download_github
     dest: ./resources/[in]/in-interior
     ref: main
-    src: https://github.com/qbcore-framework/in-interior
+    src: https://github.com/qbcore-framework/qb-interior
 
   - action: download_github
     dest: ./resources/[in]/in-menu
     ref: main
-    src: https://github.com/qbcore-framework/in-menu
+    src: https://github.com/qbcore-framework/qb-menu
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -269,7 +269,7 @@ tasks:
   - action: download_github
     dest: ./resources/[in]/in-input
     ref: main
-    src: https://github.com/qbcore-framework/in-input
+    src: https://github.com/qbcore-framework/qb-input
 
   # Clean up
   - action: remove_path
