@@ -1,6 +1,6 @@
 $engine: 3
 $onesync: on
-name: QBCore Framework (Minimal)
+name: Framework
 version: 2.2.4
 author: ⠝
 
@@ -58,81 +58,84 @@ tasks:
 
   # Download Core QBCore Framework Resources
   - action: download_github_list
-    org: qbcore-framework
     repos:
       # Standalone Dependencies
-      - name: bob74_ipl
+      - src: https://github.com/qbcore-framework/bob74_ipl
         ref: master
         path: ./resources/[standalone]/bob74_ipl
-      - name: progressbar
+      - src: https://github.com/qbcore-framework/progressbar
         path: ./resources/[standalone]/progressbar
-      - name: interact-sound
+      - src: https://github.com/qbcore-framework/interact-sound
         ref: master
         path: ./resources/[standalone]/interact-sound
-      - name: connectqueue
+      - src: https://github.com/qbcore-framework/connectqueue
         ref: master
         path: ./resources/[standalone]/connectqueue
-      - name: PolyZone
+      - src: https://github.com/qbcore-framework/PolyZone
         ref: master
         path: ./resources/[standalone]/PolyZone
-      - name: LegacyFuel
+      - src: https://github.com/qbcore-framework/LegacyFuel
         ref: master
         path: ./resources/[standalone]/LegacyFuel
       # Voice
-      - name: qb-radio
+      - src: https://github.com/qbcore-framework/qb-radio
         path: ./resources/[voice]/in-radio
       # Core Index
-      - name: qb-core
+      - src: https://github.com/qbcore-framework/qb-core
         path: ./resources/[index]/in-core
-      - name: qb-adminmenu
+      - src: https://github.com/qbcore-framework/qb-adminmenu
         path: ./resources/[index]/in-adminmenu
-      - name: qb-multicharacter
+      - src: https://github.com/qbcore-framework/qb-multicharacter
         path: ./resources/[index]/in-multicharacter
-      - name: qb-target
+      - src: https://github.com/qbcore-framework/qb-target
         path: ./resources/[index]/in-target
-      - name: qb-prison
+      - src: https://github.com/qbcore-framework/qb-prison
         path: ./resources/[index]/in-prison
-      - name: qb-hud
+      - src: https://github.com/qbcore-framework/qb-hud
         path: ./resources/[index]/in-hud
-      - name: qb-management
+      - src: https://github.com/qbcore-framework/qb-management
         path: ./resources/[index]/in-management
-      - name: qb-inventory
+      - src: https://github.com/qbcore-framework/qb-inventory
         path: ./resources/[index]/in-inventory
-      - name: qb-houses
+      - src: https://github.com/qbcore-framework/qb-houses
         path: ./resources/[index]/in-houses
-      - name: qb-garages
+      - src: https://github.com/qbcore-framework/qb-garages
         path: ./resources/[index]/in-garages
-      - name: qb-ambulancejob
+      - src: https://github.com/qbcore-framework/qb-ambulancejob
         path: ./resources/[index]/in-ambulancejob
-      - name: qb-radialmenu
+      - src: https://github.com/qbcore-framework/qb-radialmenu
         path: ./resources/[index]/in-radialmenu
-      - name: qb-weathersync
+      - src: https://github.com/qbcore-framework/qb-weathersync
         path: ./resources/[index]/in-weathersync
-      - name: qb-policejob
+      - src: https://github.com/qbcore-framework/qb-policejob
         path: ./resources/[index]/in-policejob
-      - name: qb-apartments
+      - src: https://github.com/qbcore-framework/qb-apartments
         path: ./resources/[index]/in-apartments
-      - name: qb-vehiclekeys
+      - src: https://github.com/qbcore-framework/qb-vehiclekeys
         path: ./resources/[index]/in-vehiclekeys
-      - name: qb-phone
+      - src: https://github.com/qbcore-framework/qb-phone
         path: ./resources/[index]/in-phone
-      - name: qb-weapons
+      - src: https://github.com/qbcore-framework/qb-weapons
         path: ./resources/[index]/in-weapons
-      - name: qb-spawn
+      - src: https://github.com/qbcore-framework/qb-spawn
         path: ./resources/[index]/in-spawn
-      - name: qb-banking
+      - src: https://github.com/qbcore-framework/qb-smallresources
+        path: ./resources/[index]/in-smallresources
+      - src: https://github.com/qbcore-framework/qb-cityhall
+        path: ./resources/[index]/in-cityhall
+      - src: https://github.com/qbcore-framework/qb-banking
         path: ./resources/[index]/in-banking
-      - name: qb-clothing
+      - src: https://github.com/qbcore-framework/qb-clothing
         path: ./resources/[index]/in-clothing
-      - name: qb-doorlock
+      - src: https://github.com/qbcore-framework/qb-doorlock
         path: ./resources/[index]/in-doorlock
-      - name: qb-shops
+      - src: https://github.com/qbcore-framework/qb-shops
         path: ./resources/[index]/in-shops
-      - name: qb-interior
+      - src: https://github.com/qbcore-framework/qb-interior
         path: ./resources/[index]/in-interior
-      - name: qb-menu
+      - src: https://github.com/qbcore-framework/qb-menu
         path: ./resources/[index]/in-menu
-      - name: qb-input
+      - src: https://github.com/qbcore-framework/qb-input
         path: ./resources/[index]/in-input
 
   # Final Cleanup
