@@ -1,9 +1,9 @@
 $engine: 3
 $onesync: on
-name: Framework
+name: QBCore Framework
 version: 2.2.4
-author: Index Development
-description: 
+author: JericoFx & Kakarot & Hamy
+description: A streamlined FiveM RP framework with only essential scripts.
 
 tasks:
   # Download Base Files
@@ -11,6 +11,9 @@ tasks:
     src: https://github.com/qbcore-framework/txAdminRecipe
     ref: main
     dest: ./tmp/qbcore
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   - action: move_path
     src: ./tmp/qbcore/server.cfg
@@ -51,6 +54,9 @@ tasks:
     ref: master
     src: https://github.com/qbcore-framework/bob74_ipl
 
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
   - action: download_github
     dest: ./resources/[standalone]/safecracker
     ref: main
@@ -80,6 +86,9 @@ tasks:
     dest: ./resources/[standalone]/PolyZone
     ref: master
     src: https://github.com/qbcore-framework/PolyZone
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   # Voice
   - action: download_github
@@ -118,6 +127,9 @@ tasks:
     dest: ./resources/[coremods]/qb-garages
     ref: main
     src: https://github.com/qbcore-framework/qb-garages
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   - action: download_github
     dest: ./resources/[coremods]/qb-vehicleshop
